@@ -1,6 +1,7 @@
 <%- include('partials/header'); %>
 <h1 class="title"><%= today %></h1>
 <h3><%= homeStartContent %></h3>
+<p class="title">Thanks for visiting my application! You won't see an option to write an entry the reason being, firstly, even if you write an entry, it would be visible to everyone who visits the site. Moreover, if someone else also writes an entry it would be visible on the same page as yours, the reason being there is no database included which will fetch data based on different user accounts. I'm still learning about databases and soon will update the application. </p> 
 <%  newPostEjs.forEach(function(posts) { %>
   <h2> <%= posts.title %> </h2> 
   <p class="paragraph"> 
