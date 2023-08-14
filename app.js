@@ -26,7 +26,7 @@ app.get("/", function(req,res){
     day: 'numeric'
   };
   let todayDate = date.toLocaleDateString("en-US", options);
-  res.render("Home", {today: todayDate, homeStartContent: homeStartingContent, newPostEjs: posts});
+  res.render("home", {today: todayDate, homeStartContent: homeStartingContent, newPostEjs: posts});
 })
 
 app.get("/about", function(req,res){
